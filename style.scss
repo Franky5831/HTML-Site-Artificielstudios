@@ -1,0 +1,105 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: "satoshi", sans-serif;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import "fonts";
+
+
+
+
+*{
+	font-family: "satoshi", sans-serif;
+}
+body{
+	background-color: #000;
+	color: #fff;
+	min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+	overflow: hidden;
+
+	#bgVideo{
+		position: absolute;
+		z-index: 1;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.card{
+		position: relative;
+		z-index: 10;
+		border-radius: 26px;
+		border: 1px solid rgba(245, 177, 143, 0.14);
+		background: rgba(214, 214, 214, 0.02);
+		box-shadow: 2px 15px 4px -10px rgba(0, 0, 0, 0.13);
+		backdrop-filter: blur(19.350000381469727px);
+		width: 90vw;
+		height: 90vh;
+		max-width: 1200px;
+		max-height: 740px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		h1{
+			font-size: 60px;
+			line-height: 64px;
+			font-weight: 500;
+		}
+		.cardContent{
+			.contactUs{
+				margin-top: 20px;
+				a{
+					color: #fff;
+					opacity: 1;
+					transition: opacity .3s;
+					&:hover{
+						opacity: .8;
+					}
+				}
+			}
+		}
+	}
+}
